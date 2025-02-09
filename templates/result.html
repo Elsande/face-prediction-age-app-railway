@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Prediksi Umur</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e1f2fe;
+            color: #333;
+            text-align: center;
+        }
+
+        .navbar {
+            background-color: #0066cc;
+            padding: 15px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .container {
+            background-color: white;
+            margin-top: 30px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .result img {
+            max-width: 300px;
+            border-radius: 5px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0066cc;
+            font-size: 18px;
+            margin-top: 20px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="/">Home</a>
+        <a href="/about">Tentang Aplikasi</a>
+    </div>
+    <div class="container">
+        <h1>Halo, Sesuai Identifikasi</h1>
+        <div class="result">
+            <img src="{{ image }}" alt="Uploaded Image">
+            <p>Umur Kamu {{ age }} Tahun</p>
+        </div>
+        <a href="/">Kembali ke Beranda</a>
+    </div>
+</body>
+</html>
